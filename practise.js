@@ -19,7 +19,6 @@
 // returnedObject.decrement();
 // returnedObject.decrement();
 
-
 // 2.  code to generate random number of size n
 
 // function generateRandomNumber(n) {
@@ -28,5 +27,57 @@
 
 // 	return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 // }
-
 // console.log(generateRandomNumber(5));
+
+// 3. wtite code to concat nested arrays.
+// function concatNestedArrays(arr) {
+// 	let flatArr = [];
+// 	for (let ele of arr) {
+// 		if (Array.isArray(ele)) {
+// 			let recFlatArr = concatNestedArrays(ele);
+
+// 			flatArr = flatArr.concat(recFlatArr);
+// 		} else {
+// 			flatArr = flatArr.concat(ele);
+// 		}
+// 	}
+// 	return flatArr;
+// }
+
+// function flattenArray(arr) {
+// 	return arr.reduce(
+// 		(flat, next) =>
+// 			flat.concat(Array.isArray(next) ? flattenArray(next) : next),
+// 		[],
+// 	);
+// }
+// const inputArr = [1, 2, 3, 4, [5, 6, 7, [8, 9, 10]], [11, 12, 13, [14, 15]]];
+// console.log(flattenArray(inputArr));
+// console.log(concatNestedArrays(inputArr));
+
+// 4.
+// console.log([] == ![]);
+
+// 5.
+// console.log(["1", "2", "3"].map(parseInt));
+
+// if (true) {
+// 	var a = 10;
+// 	let b = 20;
+// 	const c = 30;
+// 	console.log(a);
+// 	console.log(b);
+// 	console.log(c);
+// }
+
+function aFunc(params) {
+	var a = 10;
+	let b = 20;
+	const c = 30;
+	console.log(a);
+	console.log(b);
+	console.log(c);
+}
+aFunc();
+
+console.log(a);
