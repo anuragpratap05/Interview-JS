@@ -1,4 +1,4 @@
-//1.  Code for Data hiding and encapsulation:
+// 1.  Code for Data hiding and encapsulation:
 // function hideData() {
 // 	let count = 0;
 // 	return {
@@ -70,14 +70,29 @@
 // 	console.log(c);
 // }
 
-function aFunc(params) {
-	var a = 10;
-	let b = 20;
-	const c = 30;
-	console.log(a);
-	console.log(b);
-	console.log(c);
-}
-aFunc();
+// function aFunc(params) {
+// 	var a = 10;
+// 	let b = 20;
+// 	const c = 30;
+// 	console.log(a);
+// 	console.log(b);
+// 	console.log(c);
+// }
+// aFunc();
 
-console.log(a);
+// console.log(a);
+
+// 6. find frequency of each letter of a string
+// function findFrequency(str) {
+// 	const st = {};
+
+// 	for (let letter of str) {
+// 		if (st[letter]) {
+// 			st[letter] += 1;
+// 		} else {
+// 			st[letter] = 1;
+// 		}
+// 	}
+// 	console.log(st);
+// }
+// findFrequency("applee");
