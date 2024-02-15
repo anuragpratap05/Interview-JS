@@ -83,13 +83,13 @@
 // 	console.log("this is nexttick queue!!");
 // });
 
-// setTimeout(() => {
-// 	console.log("this is setTimeout");
-// }, 0);
-
 // setImmediate(() => {
 // 	console.log("this is setImmediate");
 // });
+
+// setTimeout(() => {
+// 	console.log("this is setTimeout");
+// }, 0);
 
 // "this is nexttick queue!!"
 // "promise is resolved"
