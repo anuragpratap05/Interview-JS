@@ -99,16 +99,35 @@
 
 // 7. shallow v/s deep copy
 
-const user = {
-	name: "Anurag",
-	age: 32,
-};
+// const user = {
+// 	name: "Anurag",
+// 	age: 32,
+// };
 
-const arr = [1, 2, user];
+// const arr = [1, 2, user];
 
-const shallowArr = [...arr];
+// const shallowArr = [...arr];
 
-user.name = "changed";
+// user.name = "changed";
 
-console.log(arr);
-console.log(shallowArr);
+// console.log(arr);
+// console.log(shallowArr);
+
+//OR with objects
+// let originalObj = { a: 1, b: { c: 2 } };
+// let copiedObj = { ...originalObj };
+
+// copiedObj.b.c = 55;
+// console.log(originalObj);
+// console.log(copiedObj);
+
+//  Deep copy
+
+const originalArray = [1, 2, { a: 3 }];
+const deepCopy = JSON.parse(JSON.stringify(originalArray));
+
+// Modifying the nested object in the deep copy
+deepCopy[2].a = 5;
+
+console.log(originalArray); // [1, 2, { a: 3 }]
+console.log(deepCopy);
