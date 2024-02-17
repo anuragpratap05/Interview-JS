@@ -30,3 +30,14 @@
 10. **Websocket v/s socket**
 10. **Static v/s dynamic module(loading) in node**
 10. **Auth in websocket v/s socket**
+11. **Dom manipulation JS**
+12. **cursor is db term or node term**
+12. **Pagination -> limit , ?**
+12. **Shallow v/s deep copy**
+12. **spread operator created deep or shallow copy**
+12. **using spread op with nested object**
+12. **closet in JS**
+12. **styling in JS**
+12. **primitive and non primitive data type? and define primitive.**
+12. **Base46 ?**
+12. ****

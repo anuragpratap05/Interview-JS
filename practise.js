@@ -96,3 +96,19 @@
 // 	console.log(st);
 // }
 // findFrequency("applee");
+
+// 7. shallow v/s deep copy
+
+const user = {
+	name: "Anurag",
+	age: 32,
+};
+
+const arr = [1, 2, user];
+
+const shallowArr = [...arr];
+
+user.name = "changed";
+
+console.log(arr);
+console.log(shallowArr);
